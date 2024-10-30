@@ -1,0 +1,32 @@
+
+
+
+@import '../Root.scss';
+
+.BackButton {
+
+    &__back {
+        height: 20px;
+        display: inline-flex;
+
+        &__but {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s;
+            font-family: $fonts;
+            color: $primary;
+
+            &__sp {
+                margin-left: 8px;
+            }
+
+            &__svg {
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+
+}

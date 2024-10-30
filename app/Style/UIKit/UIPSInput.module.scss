@@ -1,0 +1,73 @@
+@import '../Root.scss';
+
+
+
+@mixin scrollbar() {
+    &::-webkit-scrollbar {
+        width: 13px;
+        height: 14px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        height: 6px;
+        border: 4px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.15);
+        box-shadow: inset -1px -1px 0px rgba(80, 80, 80, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+}
+
+
+.UIPSInput {
+    height: 65px;
+    font-size: 16px;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    padding: 0px 40px;
+
+    &__custom {
+        word-break: break-all;
+        position: relative;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        line-height: 20px;
+        padding-right: 8px;
+        font-size: 16px;
+        overflow: hidden auto;
+        @include scrollbar();
+
+        &__input {
+            line-height: 20px;
+            display: block;
+            width: 100%;
+            word-break: break-word;
+            color: $belice;
+            font-family: $fonts;
+        }
+
+        &__placeholder {
+            position: absolute;
+            top: 50%;
+            color: $belice;
+            pointer-events: none;
+            transform: translateY(-50%);
+            font-weight: 500;
+            font-family: $fonts;
+            font-weight: bold;
+        }
+    }
+}

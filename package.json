@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hooks-library/core": "^0.6.2",
+    "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "next": "15.0.1"
+    "sass": "^1.80.4",
+    "usehooks-ts": "^3.1.0",
+    "zustand": "^5.0.0"
   },
   "devDependencies": {
     "typescript": "^5",

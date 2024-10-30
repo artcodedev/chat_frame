@@ -1,0 +1,32 @@
+
+@import '../Root.scss';
+
+
+.FaqAnswers {
+    padding: 20px 35px;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+    font-family: $fonts;
+
+    &__wrapp {
+        color: $asfalto;
+        line-height: 24px;
+
+        &__title {
+            font-weight: 600;
+            color: $belice;
+            line-height: 24px;
+            
+        }
+        &__txt {
+            padding-top: 20px;
+            margin: 0;
+        }
+    }
+}

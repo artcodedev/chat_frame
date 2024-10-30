@@ -1,0 +1,96 @@
+
+
+@import '../Root.scss';
+
+.LangButton {
+    &__lang {
+        position: relative;
+        margin: 4px;
+        background: rgba(0, 0, 0, 1);
+        color: rgba(250, 250, 250, 1);
+        border-radius: 2px;
+        cursor: pointer;
+
+        &__select {
+            overflow: visible;
+            border: none;
+            outline: none;
+            font-family: "Roboto", sans-serif;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 10px;
+            font-weight: 500;
+            color: var(--component-language-selector-color, var(--color-rio));
+            background-color: var(--component-language-selector-background, var(--color-asfalto));
+            border-radius: var(--component-language-selector-border-corner, 2px);
+        }
+
+        &__menu {
+            position: absolute;
+            top: 32px;
+            left: 50%;
+            z-index: 20;
+            box-shadow: 0 4px 35px 0 rgba(0, 0, 0, .5);
+            transform: translateX(-50%);
+            border-radius: 10px;
+
+            &_list {
+                position: relative;
+                z-index: 2;
+                width: 112px;
+                max-height: 270px;
+                border-radius: 10px;
+                border-radius: var(--component-language-selector-menu-list-border-corner, 10px);
+                background-color: var(--color-rio);
+
+                &_ps {
+                    max-height: 270px;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden !important;
+                    overflow-anchor: none;
+                    -ms-overflow-style: none;
+                    touch-action: auto;
+                    -ms-touch-action: auto;
+
+                    &_txt {
+                        border-bottom: none;
+                        border-bottom-right-radius: var(--component-language-selector-menu-list-border-corner, 10px);
+                        border-bottom-left-radius: var(--component-language-selector-menu-list-border-corner, 10px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        &_st {
+                            color: rgba(0,0,0,1);
+                            font-size: 12px;
+                            font-family: $fonts;
+                        }
+                    }
+                }
+            }
+
+            &-d-none {
+                display: none;
+            }
+        }
+
+        &__menu::before {
+            position: absolute;
+            top: -18px;
+            right: 50%;
+            z-index: 1;
+            content: "";
+            border: 10px solid rgba(0, 0, 0, 0);
+            border-bottom: 14px solid #fff;
+            transform: translateX(50%);
+        
+        }
+
+    }
+}

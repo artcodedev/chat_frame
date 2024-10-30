@@ -1,0 +1,21 @@
+
+
+{
+    "questions": [
+        {
+            "icon": "icon-article",
+            "question": "Как играть на вашем сайте?11",
+            "item": "0"
+        },
+        {
+            "icon": "icon-article",
+            "question": "Как играть на вашем сайте?",
+            "item": "1"
+        },
+        {
+            "icon": "icon-article",
+            "question": "Как играть на вашем сайте?",
+            "item": "2"
+        }
+    ] 
+}

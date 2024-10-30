@@ -1,0 +1,25 @@
+
+@import '../Root.scss';
+
+.UIButton {
+
+    &__size_16 {
+        font-size: 16px;
+    }
+
+    &__but{
+        &_hidden {
+            margin: 4px;
+            align-items: center;
+            display: flex;
+            
+            color: $primary;
+
+            &__wrapIcon {
+                align-items: center;
+                display: inline-flex;
+            }
+        }
+    }
+
+}

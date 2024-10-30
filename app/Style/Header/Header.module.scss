@@ -1,0 +1,43 @@
+
+@import '../Root.scss';
+
+
+.Header {
+
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: var(--header-background, transparent);
+    box-shadow: var(--component-header-shadow) 0 2px 35px 0;
+
+    &__but{
+
+        &_hidden {
+            margin: 4px;
+            align-items: center;
+            display: flex;
+            font-size: 16px;
+            color: $primary;
+
+            &__wrapIcon {
+                align-items: center;
+                display: inline-flex;
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__actions {
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+}
