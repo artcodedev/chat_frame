@@ -6,11 +6,11 @@ import Test from "@/app/Components/Test";
 
 import Header from '@/app/Components/Header';
 import Audio_s from '@/app/Components/Audio';
-import Footer from '@/app/Components/Footer';
+import Footer from '@/app/Components/Footer/Footer';
 import Faq from '@/app/Components/Faq';
 import UIPSInput from '@/app/UIKit/UIPSInput';
 import FaqAnswers from "@/app/Components/FaqAnswers";
-import FaqAnswersFooter from '@/app/Components/FaqAnswersFooter';
+import FaqAnswersFooter from '@/app/Components/Footer/FaqAnswersFooter';
 import { useStorefaqAnswer } from '@/app/Store/Store';
 
 
